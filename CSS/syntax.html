@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax</title>
+    <style>
+        *{
+            background-color:azure;
+        }
+        h2 {
+            color: #22252B;
+            padding-left: 1em;
+        }
+        p {
+            color: rgb(101, 143, 235);
+            font-weight: bold;
+            font-size: 2em;
+            padding-left: 2em;
+        }
+        .class {
+            color: #53655C;
+        }
+        .peracls {
+            color: rgb(114, 182, 114);
+        }
+        #idh {
+            color: #7f878a;
+        }
+        #text {
+            color: rgb(235, 186, 235);
+        }
+        [id="atr"] {
+            color: #91837b;
+        }
+        [id="atrpara"] {
+            color: rgb(136, 236, 106);
+        }
+        h2:hover {
+           background-color: rgb(243, 192, 243);
+        }
+        p::selection {
+            background-color: rgb(134, 133, 133);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Syntax</h2>
+    <p>A CSS rule-set consists of a selector </p>
+
+    <h2 class="class">Class</h2>
+        <p class="peracls">This effects applied by class</p>
+
+    <h2 id="idh">Id</h2>
+    <p id="text">This effects applied by id</p>
+
+    <h2 id="atr">Attributes</h2>
+    <p id="atrpara">This effects applied by Attributes</p>
+
+    <h2>Pseudo-class</h2>
+    <p>This id pseudo-element selection</p>
+</body>
+</html>

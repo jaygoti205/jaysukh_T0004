@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+      
+            align-items: center;
+        }
+        .display-property{
+            color: #28363d;
+            font-weight: bold;
+            border: 2px solid #28363d;
+        }
+        p , .relative{
+            color: #28363d;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 1em;
+            border: 2px solid #28363d;
+            margin: 5px;
+           
+        }
+        p.block {
+            display: block;
+        }
+        p.inline {
+            display: inline;
+        }  
+        p.inline-block {
+            display: inline-block;
+        }
+        p.none {
+            display: none;
+        } 
+        .position {
+            color: #28363d;
+            font-weight: bold;
+            border: 2px solid #28363d;
+        }
+        p.static {
+            position: static;
+        }
+        .relative {
+            position: relative;
+            height: 5em;
+            border: 2px solid #2793c9;
+        }
+        .absolute {
+            position: absolute;
+            border: 1px solid #2793c9;
+            margin: 2em;
+        }    
+        p.sticky {
+            position: sticky;
+        }
+        header {
+            background-color: #658b6f;
+            text-align: center;
+            width: 100%;
+            float:left;
+            margin-bottom: 5px;
+        }
+      
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background-color: #658b6f;
+            float: center;
+            width: 100%;
+        } 
+        h2{
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background-color: #8b7e65;
+        }
+        .container {
+            margin: 1em;
+            position:relative;
+            display: flex;
+            align-items: stretch;
+            justify-content:space-around;
+           
+        }
+        .container > div {
+            background-color: #658b6f;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            line-height: 5em;
+        }
+           
+        .box {
+            width: 18em;
+            height: 5em;
+            background-color: #658b6f;
+            border: 5px solid #28363d;
+            padding: 5px;
+            border-radius: 2em;
+            box-sizing: content-box;
+            display:block;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+            gap: 10px;
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Layout</h1>
+    </header>
+
+    <div class="display-property">
+        <h2 class="displayh1">Display property</h2>
+        <p class="block">display:block</p>
+        <p class="inline">display:inline</p>    
+        <p class="inline-block">display:inline-block</p>    
+        <p class="none">display:none</p>
+    </div>
+    <div class="position">
+        <h2 class="positionh1">Position property</h2>
+        <p class="static">position:static</p>
+        <div class="relative">
+            position:relative  
+            <div class="absolute">position:absolute</div>
+        </div>
+        <p class="sticky">position:sticky</p>
+    </div>
+    <div class="container">
+        
+        <div class="box" style="flex-shrink: 0">Box1</div>
+
+        <div class="box">Box2</div> 
+
+        <div class="box">Box3</div> 
+        
+        <div class="box" style="align-self: flex-start">Box4</div>
+
+        <div class="box">Box5</div>
+
+        <div class="box">Box6</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+      </div>
+    
+
+
+
+</body>
+</html>

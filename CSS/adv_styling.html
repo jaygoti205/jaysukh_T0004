@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="ad, initial-scale=1.0">
+    <title>Advanced property</title>
+    <style>
+        .main-box {
+            width: 100%;
+        }
+        .box {
+            width: 20%;
+            height: 100px;
+            background: rgb(241, 161, 115);
+            margin: 2px;
+            transition: width 2s;
+            transition: height 2s;
+            transition: width 3s, height 2s;
+            transition-delay: 1s;
+
+        }
+        #box1:hover {
+            width: 300px;
+            transition-timing-function: linear;           
+        }
+        #box2:hover {
+            height: 300px;
+            transition-timing-function: ease;
+            
+        }
+        #box3:hover {
+            width: 300px;
+            height: 300px;
+            transition-timing-function: ease-in-out;
+        }
+        #Tbox1:hover {
+               transform: rotate(180deg);
+                transition: transform 2s;          
+        }
+        #Tbox2:hover {
+            transform: scale(0.5,0.7);
+            transition: transform 2s;
+        }
+        #Tbox3:hover {
+           
+            transition: transform 2s;
+        }
+        #animation-box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(241, 161, 115);
+            animation: animate 5s infinite;
+            position: relative;
+            animation-delay: 2s;
+            
+        }
+        @keyframes animate {
+            0% {
+                background-color:  rgb(241, 161, 115);
+                width: 100px;
+                height: 100px;
+                color: white;
+                left: 0em;
+                top: 0em;
+
+            }
+            50% {
+                background-color: #977773;
+                width: 200px;
+                height: 200px;
+                left: 2em;
+                top: 5em;
+            }
+            100% {
+                background-color:rgb(241, 161, 115);;
+                width: 100px;
+                height: 100px;
+                left: 0em;
+                top: 0em;
+            }    
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main-box"><h2>Transition effect</h2>
+        <div id="box1" class="box">transition: width 2s</div>
+        <div id="box2" class="box">transition: height 2s</div>
+        <div id="box3" class="box">transition:  width 3s, height 2s</div>
+    </div> 
+    <div class="main-box"><h2>Transform effect</h2>
+        <div id="Tbox1" class="box">transform: rotate(180deg);</div>
+        <div id="Tbox2" class="box"> transform: scale(0.5,0.7);</div>
+        <div id="Tbox3" class="box"> transform: skew(20deg, 10deg);</div>
+    </div>
+    <div class="main-box"><h2>Animation effect</h2>
+        <div id="animation-box" class="box">transition:  width 3s, height 2s</div>
+    </div>
+
+
+</body>
+</html>

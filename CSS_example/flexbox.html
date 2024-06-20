@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flower shop</title>
+    <style>
+        *{
+            background-color: rgb(209, 239, 248);
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;;
+            flex-flow: wrap;
+        }
+        .flower {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            background:radial-gradient(circle, rgb(218, 54, 155) 10%, rgb(55, 221, 243) 100%);
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        h2,p{
+            color:black;
+            background-color: transparent;
+            padding: 0 auto;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Flower wrap</h1>
+    <div class="container">
+        <div class="flower">
+            <img src="./media/flower1.jpeg" alt="flower1">
+            <h2>Flower 1</h2>
+            <p>Price: $10</p>
+        </div>
+        <div class="flower">
+            <img src="./media/flower2.jpeg" alt="flower2">
+            <h2>Flower 2</h2>
+            <p>Price: $20</p>
+        </div>
+        <div class="flower">
+            <img src="./media/flower3.jpeg" alt="flower3">
+            <h2>Flower 3</h2>
+            <p>Price: $30</p>
+         </div>
+         <div class="flower">
+            <img src="./media/flower4.jpeg" alt="flower4">
+            <h2>Flower 4</h2>
+            <p>Price: $40</p>
+        </div>
+        <div class="flower">
+            <img src="./media/flower5.jpeg" alt="flower5">
+            <h2>Flower 5</h2>
+            <p>Price: $50</p>
+        </div>
+        <div class="flower">
+            <img src="./media/flower6.jpeg" alt="flower6">
+            <h2>Flower 6</h2>
+            <p>Price: $60</p>
+        </div>
+     </div>
+    
+</body>
+</html>

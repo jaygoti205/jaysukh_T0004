@@ -1,0 +1,13 @@
+body {
+    background-color: #d3d3d3;
+}
+.head2 {
+    color: rgba(31, 75, 44, 0.726);
+    text-align: right;
+}
+.para2 {
+    color: rgb(23, 151, 102);
+    text-align: right;
+    font-weight: bold;
+    margin-left: 5em;
+}
